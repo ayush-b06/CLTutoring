@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>CLTutoring</title>
+        <link rel="stylesheet" ~ href="../Styling.css">
+        <link rel="stylesheet" ~ href="FIND A TUTOR.css">
+        <link rel="shortcut icon" href="C:/Users/Ayush/Pictures/Ayush Photos/Katana Zero Little Girl.png">
+        <meta name="description" content="Free tutoring for HS Students">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <p><a ~ href = "../Tutoring Website.html"> <img class="nav-logo" ~ src ="../Pictures/CLTutoring logo.png"></a></p>
+        <ul class = "nav-tools">
+            <!--
+                I just made it <ul> as a list just to make it easier to understand, it would also work as a <div>
+            -->
+            <li class="nav-item underline"><a ~ href="../Tutoring Website.html">HOME</a></li>
+            <li class="nav-dropdown">
+                <!--
+                    Since this nav item is a dropdown, it takes css properties from .nav-item and 
+                    .nav-dropdown-item, essentially having two classes (this is to fix problem of
+                    regular nav-item having height of 100px, thus making dropdown-contents have a
+                    gap due to the height of the nav-item so i made nav-dropdown-item to change height
+                    to auto )
+                -->
+                <button class="nav-item nav-dropdown-item underline"><a ~ href="../Tutoring Website.html#body1-title">ABOUT</a></button>
+                <div class="nav-dropdown-content nav-dropdown-gap"></div>
+                <ul class="nav-dropdown-content">
+                    <li><a ~ href="../Navbar Links/Find A TUTOR.html">Find A Tutor</a></li>
+                    <li><a ~ href="../Navbar Links/ABOUT/Subjects We Teach.html">Subjects We Teach</a></li>
+                    <li><a ~ href="../Navbar Links/ABOUT/Our Instructors.html">Our Instructors</a></li>
+                    <li><a ~ href="../Navbar Links/ABOUT/Benefits For Students.html">Benefits For Students</a></li>
+                        <!--
+                            Students have the opportunity to learn from tutors at their convinience... etc 
+                        -->
+                </ul>
+            </li>
+            <li class="nav-dropdown">
+                <button class="nav-item nav-dropdown-item underline"><a ~ href="../Navbar Links/CONTACT/CONTACT.html">CONTACT</a></button>
+                <div class="nav-dropdown-content nav-dropdown-gap"></div>
+                <ul class="nav-dropdown-content">
+                    <li><a ~ href="../Navbar Links/Become A Tutor.html">Become A Tutor</a></li>
+                </ul>
+                    <!--
+                        Meet the Team!... in all caps font
+                    -->
+            </li>
+            <li class="nav-item underline"><a href="https://www.google.com/maps/place/Ballantyne,+Charlotte,+NC+28277
+                /@35.0406618,-80.8658671,14z/data=!4m6!3m5!1s0x88569d2895f6d23b:0x354bc674e1c11c3e!8m2!3d35
+                .0469079!4d-80.8454702!16s%2Fm%2F0282sw6?entry=ttu" target="_blank">LOCATION</a></li>
+            <li class="nav-item underline"><a ~ href="../Navbar Links/FAQ/FAQ.html">FAQ</a></li>
+        </ul>
+        <div style="display: flex;">
+            <li class="nav-item nav-button" style="margin-right: 40px;"><a ~ href="../Navbar Links/Become A Tutor.html">BECOME A TUTOR</a></li>
+            <li class="nav-item nav-button"><a ~ href="../Navbar Links/Find A TUTOR.html">FIND A TUTOR</a></li>
+        </div>
+        <!--<span class="nav-contact">
+            <img id="phone" src="Pictures/Phone.png">
+            <h2 id="number" style="color:rgb(203, 199, 212)"><u>919-919-9019</u></h2>
+        </span>
+        -->
+        <!-- Image picture on homepage
+        <img src="Pictures/tutoring pic.jpeg" 
+        style="margin: 1150px 0px 0px -20px; position: absolute; width: 350px; border-radius: 3353330px; 
+        opacity: 0.85">
+        --> 
+    </nav>
+
+    <div class="homepage">
+        <img class="homepage-background" ~ src="../Pictures/TUTOR background.jpg">
+        <div class="homepage-content" ~ style="width: 440px;">
+            <div class="typewriter homepage-hair">
+                <h1 ~ class="homepage-hair">FIND</h1>
+            </div>
+            <div class="typewriter homepage-heading">
+                <h2 ~ class="homepage-heading">YOUR TUTOR</h2>
+            </div>
+        </div>
+        <img class="find-a-tutor_body1-pic" src="../Pictures/long tutoring.webp">
+        <hr class = "line-break" ~ style="width: 100px; margin-top:-10px">
+        <div class="typewriter homepage-text homepage-content" style="width: 1200px">
+            <h2 ~ class="homepage-text" style="letter-spacing: 0.15em; animation-delay: 3s;">Ready
+                to begin <b id="charlotte" style="color: rgb(214, 225, 255)">tutoring?</b> Explore our talented instructors by clicking the View Our Team
+            </h2>
+        </div>
+        <div ~ class="typewriter homepage-text homepage-content" style="margin-top: 0px; width: 1100px;">
+            <h2 ~ class="homepage-text" style="animation-delay: 5s;"> button. To request a tutor, fill out the form below and we'll
+                reach out to you promptly.
+            </h2>
+        </div>
+        <div ~ class="typewriter homepage-text homepage-content" style="margin-top: 0px; width: 960px;">
+            <h3 ~ class="homepage-text" style="animation-delay: 7s;">For any questions, feel free to contact us using the Contact Us button.
+            </h3>
+        </div>
+        <div class="view-our-team_button">
+            <a ~ href="../Navbar Links/ABOUT/Our Instructors.html">VIEW OUR TEAM</a>
+            <a ~ href="../Navbar Links/CONTACT/CONTACT.html">CONTACT US</a>
+        </div>
+    </div>
+
+    <hr class = "line-break" style="margin-top: -17px; margin-bottom: 50px;">
+
+    <div class="find-a-tutor_bodypage">
+        <div class="find-a-tutor_body1">
+            <div class="find-a-tutor_body1-content">
+                <h1 class="find-a-tutor_body1-hair">Fill The Form Below to Request for a Tutor!</h1>
+                <div class="find-a-tutor_body1-form"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script ~ src="../Interactions.js"></script>
+
+</body>
+</html>

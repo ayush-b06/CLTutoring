@@ -1,0 +1,497 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+
+.navbar {
+    display: flex;
+    background-color: transparent;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    height: 100px;
+    margin: 0px;
+    box-shadow: 4px 4px 5px 3px rgba(65, 50, 11, 0.05);
+    transition: height 200ms ease-in-out;
+    transition: background-color 500ms ease-in-out;
+    z-index: 5;
+}
+
+.navbar-scrolled {
+    background-color: black;
+    z-index: 30;
+}
+
+.nav-logo {
+    height: 60px;
+    margin-left: 50%;
+}
+
+/* nav-tools is middle section of hyperlinks navbar*/
+.nav-tools {
+    display: flex;
+    align-items: center;
+    padding-left:150px;
+    height: 100%;
+    margin: 0px;
+}
+
+/* nav-item is individual BOX of hyperlink*/
+.navbar .nav-item {
+    height: 50px;
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+    padding: 0px 20px;
+    border: none;
+    position: relative;
+    list-style-type: none;
+}
+
+/* These are actual navbar hyperlinks */
+.navbar .nav-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+.underline {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+/*underline effect on any hyperlinks*/
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #E0DDEE;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  z-index: 5;
+}
+
+.underline:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  z-index: 5;
+}
+
+.navbar .nav-dropdown {
+    list-style-type: none;
+}
+
+.navbar .nav-dropdown-item {
+    height: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar .nav-dropdown-item a {
+  
+}
+
+/* DROPDOWN Content (Hidden unless hovered) */
+.nav-dropdown-content {
+    visibility: hidden;
+    margin-top: 14px;
+    opacity: 0;
+    transition: cubic-bezier(0.0, 1, 0.5, 1) 1s;
+    padding: 10px 0px;
+    position: absolute;
+    background-color: #fefdff;
+    border-bottom: 5px solid transparent;
+    border-radius: 5px;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    list-style-type: none;
+    z-index: 5;
+    transition: 0.25s ease-in-out;
+}
+  
+  /* Links inside DROPDOWNS the dropdown */
+.nav-dropdown-content a {
+    color: #000;
+    font-size: 16px;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: block;
+    list-style-type: none;
+    transition: 0.3s;
+}
+   
+
+/* Gap between dropdown box and content
+since border/padding doesn't look good */
+.nav-dropdown-gap {
+  margin: 0px; 
+  padding: 0px;
+  height: 14px; 
+  background-color: transparent; 
+}
+
+  /* Show the dropdown menu of DROPDOWNS on hover */
+.nav-dropdown:hover .nav-dropdown-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+  /* Change dropdown links props of DROPDOWNS when hovered */
+.nav-dropdown-content a:hover {
+    display: block;
+    background-color: #e6ddee;
+}
+
+  
+  /* Change dropdown props of ANY NAVBAR ITEM when hovered */
+.nav-item:hover {
+}
+
+.navbar .nav-button {
+  border: none;
+  padding: 0px;
+}
+
+.navbar .nav-button a {
+  background-color: rgb(101, 94, 134);
+  border-radius: 2px;
+  padding: 13px 20px;
+  transition: 0.25s;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+.nav-button:hover {
+  border: none;
+}
+
+.nav-button:hover a {
+ background-color: rgb(91, 84, 121);
+}
+
+
+/*
+.nav-contact {
+    display: flex;
+    align-items: center;
+}
+
+#phone {
+    height:50px;
+    border-radius: 25px;
+    margin-right: 10px;
+    opacity: .85;
+}
+
+#number {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(203, 199, 212)
+}
+*/
+
+
+@font-face {
+  font-family: 'playfair_displaynormal';
+  src:url('Fonts/Playfair\ Display\ Normal.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'playfair_displayitalic';
+  src:url('Fonts/Playfair\ Display\ Italic.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'grandifloraOne';
+  src:url('Fonts/GrandifloraOne-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'KaushanScript-Regular';
+  src: url('Fonts/KaushanScript-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('Fonts/Rubik.ttf')
+}
+
+  /* beginning of homepage, */
+.homepage {
+    /*background-color: #678383;*/
+    background-color: transparent;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia;
+    padding: 230px 0px 260px 0px;
+}
+
+.homepage-background {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+.homepage .typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 1s steps(40, end),
+    blink-caret 1s step-end 0s;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: #d1c8f1 }
+  20% { border-color: transparent; }
+  40% { border-color: #d1c8f1}
+  60% { border-color: transparent; }
+  80% { border-color: #d1c8f1}
+}
+
+.homepage .typewriter h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #372966; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation:
+    typing 2s steps(40, end) forwards,
+    blink-caret 2s step-end 0s;
+    animation-delay: 1s;
+    width: 0;
+    border-color: transparent;
+}
+
+.homepage .typewriter h3 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #372966; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 2s steps(40, end) forwards,
+    blink-caret .75s step-end infinite;
+    animation-delay: 3s;
+    width: 0;
+    border-color: transparent;
+}
+
+.homepage-content {
+  display: inline-block;
+  flex-direction: column;
+  color: rgb(211, 196, 235);
+  z-index: 6;
+  font-family: Rubik;
+  width: 390px;
+}
+
+.homepage-hair {
+  font-size: 16px;
+  display: inline-block;
+}
+
+.homepage-heading {
+  width: 100%;
+  font-size: 60px;
+  margin: 10px 0px;
+  display: inline-block;
+}
+
+#charlotte {
+  color:#f3e8ff;
+}
+
+.homepage-text {
+  display: flex;
+  text-align: left;
+  width: auto;
+  display: inline-block;
+  margin-top: 150px;
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: lighter;
+}
+
+.line-break {
+  border-width: 0.5px;
+  width: 90%;
+  margin-top: -50px;
+}
+
+
+
+/* start of body page */
+
+.bodypage {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+#body1 {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+/* The next selector is to
+set the background image on body1
+seperately using background-image 
+because using a <img> in html with 
+position: absolute, the opacity affects
+the text inside too.*/
+#body1::before {
+  content: "";
+  background-image: url("Pictures/subjects-we-teach\ body1\ background.png");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: .15;
+  z-index: -1;
+}
+
+#body1 .body1-content {
+  position: relative;
+  opacity: 1;
+}
+
+.body1-segment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+#body1 .typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #372966; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 2s steps(40, end) forwards,
+    blink-caret .75s step-end infinite;
+}
+
+.body1-segment-heading {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  color: #E0DDEE;
+  font-size: 42px;
+  font-weight: 400;
+  width: 20%;
+  padding-right: 150px;
+}
+
+.body1-segment-content {
+  width: 50%;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(237, 249, 255);
+  font-size: 22px;
+  font-weight: lighter;
+  text-align: justify;
+}
+
+#body1 .why-cltutoring_content {
+  width: 50%;  
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#body1 .why-cltutoring_segment {
+  width: 100%;
+}
+
+#body1 .why-cltutoring_single-pic {
+  height: 200px;
+}
+
+/*Was made to center caption text, since
+for some reason the text-align on entire
+only works for the picture :/ */
+#body1 .why-cltutoring_caption_box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#body1 .why-cltutoring_caption {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 72%;
+  font-size: 20px;
+}
+
+
+
+#body2 {
+  width: 100%;
+  height: 900px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+#body2::before {
+content: "";
+background-image: url("");
+background-size: cover;
+position: absolute;
+top: 0px;
+right: 0px;
+bottom: 0px;
+left: 0px;
+opacity: .2;
+}
+
+
+.social-media {
+    display: flex;
+    justify-content: right;
+}
