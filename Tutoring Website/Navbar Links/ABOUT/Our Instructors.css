@@ -1,0 +1,94 @@
+.underline:before {
+    background-color: #d0d5ff;
+}
+
+.nav-dropdown-content a:hover {
+    display: block;
+    background-color: rgb(217, 231, 255);
+}
+
+.navbar .nav-button a {
+    background-color: rgb(84, 94, 153);
+}
+
+.nav-button:hover a {
+    background-color: rgb(74, 83, 133);
+}
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: #636799  }
+    20% { border-color: transparent; }
+    40% { border-color: #636799 }
+    60% { border-color: transparent; }
+    80% { border-color: #636799 }
+  }
+  
+.homepage-content {
+    color: rgb(196, 213, 255);
+}
+
+.homepage-heading {
+    color: rgb(224, 233, 255);
+}
+
+#charlotte {
+    color: rgb(240, 244, 255);
+}
+
+.our-instructors_bodypage {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.our-instructors_body1 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructors-row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.instructor {
+    padding: 30px 40px;
+    width: 100%;
+}
+
+.instructor-first {
+    margin-left: 100px;
+}
+
+.instructor-last {
+    margin-right: 100px;
+}
+
+.instructors-pic {
+    width:300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 5px solid rgb(52, 60, 107);
+    opacity: 0.8;
+}
+
+.instructors-name {
+    font-size: 20px;
+}
+
+.instructors-description {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-size: 18px;
+    text-align: jus
+
+}

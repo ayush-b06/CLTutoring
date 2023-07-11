@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>CLTutoring</title>
+        <link rel="stylesheet" ~ href="../../Styling.css">
+        <link rel="stylesheet" ~ href="Subjects We Teach.css">
+        <link rel="shortcut icon" href="C:/Users/Ayush/Pictures/Ayush Photos/Katana Zero Little Girl.png">
+        <meta name="description" content="Free tutoring for HS Students">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <p><a ~ href = "../../Tutoring Website.html"> <img class="nav-logo" ~ src ="../../Pictures/CLTutoring logo.png"></a></p>
+        <ul class = "nav-tools">
+            <!--
+                I just made it <ul> as a list just to make it easier to understand, it would also work as a <div>
+            -->
+            <li class="nav-item underline"><a ~ href="../../Tutoring Website.html">HOME</a></li>
+            <li class="nav-dropdown">
+                <!--
+                    Since this nav item is a dropdown, it takes css properties from .nav-item and 
+                    .nav-dropdown-item, essentially having two classes (this is to fix problem of
+                    regular nav-item having height of 100px, thus making dropdown-contents have a
+                    gap due to the height of the nav-item so i made nav-dropdown-item to change height
+                    to auto )
+                -->
+                <button class="nav-item nav-dropdown-item underline"><a ~ href="../../Tutoring Website.html#body1-title">ABOUT</a></button>
+                <div class="nav-dropdown-content nav-dropdown-gap"></div>
+                <ul class="nav-dropdown-content">
+                    <li><a ~ href="../../Navbar Links/Find A TUTOR.html">Find A Tutor</a></li>
+                    <li><a ~ href="../../Navbar Links/ABOUT/Subjects We Teach.html">Subjects We Teach</a></li>
+                    <li><a ~ href="../../Navbar Links/ABOUT/Our Instructors.html">Our Instructors</a></li>
+                    <!--
+                        <li><a ~ href="../../Navbar Links/ABOUT/Benefits For Students.html">Benefits For Students</a></li>
+                    -->
+                        <!--
+                            Students have the opportunity to learn from tutors at their convinience... etc 
+                        -->
+                </ul>
+            </li>
+            <li class="nav-dropdown">
+                <button class="nav-item nav-dropdown-item underline"><a ~ href="../../Navbar Links/CONTACT/CONTACT.html">CONTACT</a></button>
+                <div class="nav-dropdown-content nav-dropdown-gap"></div>
+                <ul class="nav-dropdown-content">
+                    <li><a ~ href="../../Navbar Links/Become A Tutor.html">Become A Tutor</a></li>
+                </ul>
+                    <!--
+                        Meet the Team!... in all caps font
+                    -->
+            </li>
+            <li class="nav-item underline"><a href="https://www.google.com/maps/place/Ballantyne,+Charlotte,+NC+28277
+                /@35.0406618,-80.8658671,14z/data=!4m6!3m5!1s0x88569d2895f6d23b:0x354bc674e1c11c3e!8m2!3d35
+                .0469079!4d-80.8454702!16s%2Fm%2F0282sw6?entry=ttu" target="_blank">LOCATION</a></li>
+            <li class="nav-item underline"><a ~ href="../../Navbar Links/FAQ/FAQ.html">FAQ</a></li>
+        </ul>
+        <div style="display: flex;">
+            <li class="nav-item nav-button" style="margin-right: 40px;"><a ~ href="../../Navbar Links/Become A Tutor.html">BECOME A TUTOR</a></li>
+            <li class="nav-item nav-button"><a ~ href="../../Navbar Links/Find A TUTOR.html">FIND A TUTOR</a></li>
+        </div>
+        <!--<span class="nav-contact">
+            <img id="phone" src="Pictures/Phone.png">
+            <h2 id="number" style="color:rgb(203, 199, 212)"><u>919-919-9019</u></h2>
+        </span>
+        -->
+        <!-- Image picture on homepage
+        <img src="Pictures/tutoring pic.jpeg" 
+        style="margin: 1150px 0px 0px -20px; position: absolute; width: 350px; border-radius: 3353330px; 
+        opacity: 0.85">
+        --> 
+    </nav>
+
+    <div class="homepage">
+        <img class="homepage-background" ~ src="../../Pictures/sky(1).jpg" ~ style="opacity: 0.2;">
+        <div class="homepage-content" ~ style="width: 370px;">
+            <div class="typewriter homepage-hair">
+                <h1 ~ style="animation: typing .5s steps(40, end) forwards, blink-caret .5s step-end 0s; border-color: transparent;"
+                class="homepage-hair">OUR</h1>
+            </div>
+            <div class="typewriter homepage-heading">
+                <h2 ~ style="animation: typing 1.2s steps(40, end) forwards, blink-caret 1.2s step-end 0s; border-color: transparent;
+                animation-delay: .5s" class="homepage-heading">SUBJECTS</h2>
+            </div>
+        </div>
+        <hr class = "line-break" ~ style="width: 100px; margin-top:-10px">
+        <div ~ class="typewriter homepage-text homepage-content" style="width: auto;">
+            <h3 ~ style="animation: typing 1.5s steps(40, end) forwards, blink-caret .75s step-end infinite; border-color: transparent; letter-spacing: 0.15em;
+            animation-delay: 1.7s;" class="homepage-text">CLTutoring
+                supports a wide range of subjects, and aim to assist students in <b id="charlotte">any way possible.</b>
+            </h3>
+        </div>
+    </div>
+
+
+    <hr class = "line-break" style="margin-bottom: 175px;">
+
+    <script ~ src="../../Interactions.js"></script>
+
+    <div class="subjects-we-teach_bodypage">
+        <div class="subjects-we-teach_body1">
+            <div style="text-align: center;">
+                <h3>*If you are looking for a subject that is not listed here, send us an email!
+                    CLTutoring is not limited to only these subjects!*
+                </h3>
+                <h3 style="margin-bottom: 150px;">*We also tutor <b style="color:rgb(168, 181, 247)">every subject</b> taught in 6th grade and below!*
+                </h3>
+            </div>
+
+            <div class="classes-row_title">
+                <h2>COMPUTER SCIENCE (CODING)</h2>
+            </div>
+            <div class="classes-row">
+                <div class="class">
+                    <img src="../../Pictures/html.png">
+                    <h3 class="class-title">HTML</h3>
+                    <hr style="width: 85px; margin-top: 2px;">
+                    <h5 class="class-content">HTML is the foundation of modern website development, serving as the backbone for creating
+                        web pages. When combined with CSS and JavaScript, these 3 languages create dynamic and visually appealing websites
+                        just like the one you're browsing now. At CLTutoring, we offer students solid understanding of the basics and hands-on
+                        practice to strengthen their skills in writing clean and efficient HTML code.
+                    </h5>
+                </div>
+
+                <div class="class">
+                    <img src="../../Pictures/css.png">
+                    <h3 class="class-title">CSS</h3>
+                    <hr style="width: 65px; margin-top: 2px;">
+                    <h5 class="class-content">CSS is a programming language that is used along side HTML to enhance the visual appearance of 
+                        the website. With CSS, you have full control over the styling and presentation of websites. It allows you to
+                        customize elements such as font colors, backgrounds, layouts and more. If you're interested in learning CSS 
+                        alongside HTML, CLTutoring offers sessions to help you practice enhancing HTML code with CSS.
+                    </h5>
+                </div>
+                
+
+                <div class="class">
+                    <img src="../../Pictures/js.png">
+                    <h3 class="class-title">Java Script</h3>
+                    <hr style="width: 165px; margin-top: 2px;">
+                    <h5 class="class-content">JavaScript is a programming language that adds dynamic functionality to websites.
+                        With JS, you can create interactive forms, perform calculations, manipulate HTML elements and more. JS 
+                        works with HTML & CSS to bring web pages to life. CLTutoring covers the important fundamentals of JavaScript,
+                        equipping students with the skills to learn the full potential of this language in web development.
+                    </h5>
+                </div>
+            </div>
+
+            <div class="classes-row" style="justify-content: space-evenly;">
+                <div class="class" style="margin-left: 100px;">
+                    <img src="../../Pictures/binary.png">
+                    <h3 class="class-title">PROGRAMMING BASICS</h3>
+                    <hr style="width: 255px; margin-top: 2px;">
+                    <h5 class="class-content">Learning about programming basics is very important if you are interested in the computer 
+                        science field. Programming basics is the foundation for learning any coding language and the first step in your 
+                        computer science journey. At CLTutoring, you will learn about various programming concepts, including binary,
+                        variables, data types, loops & conditionals, and functions. 
+                    </h5>
+                </div>
+
+                <div class="class" style="margin-right: 100px;">
+                    <img src="../../Pictures/python.png">
+                    <h3 class="class-title">PYTHON</h3>
+                    <hr style="width: 105px; margin-top: 2px;">
+                    <h5 class="class-content">Python is a widely-used programming language known for its simplicity and readability.
+                        It is used to simplify complex tasks and accelerate development in data analysis, web development, artificial intelligence,
+                        and more. At CLTutoring, you can learn about essential concepts, including variables, conditionals, loops, 
+                        functions, classes, and objects. 
+                    </h5>
+                </div>   
+            </div>
+
+
+            <div class="classes-row_title">
+                <h2>MATH</h2>
+            </div>
+            <div class="classes-row">
+                <div class="class">
+                    <img src="../../Pictures/algebra.jpg">
+                    <h3 class="class-title">Algebra</h3>
+                    <hr style="width: 120px; margin-top: 2px;">
+                    <h5 class="class-content">Algebra is the underlying branch of math that deals with symbols, variables 
+                        and equations. It involves solving equations to find unknown values called variables (like X). In
+                        advanced algebra, you can learn about factoring, systems of equations, and polynomials expressions.
+                        At CLTutoring, students are guided through the important fundamentals of algebra to get ahead in school,
+                        or get help with their algebra in any math classes.
+                    </h5>
+                </div>
+
+                <div class="class">
+                    <img src="../../Pictures/geometry.png">
+                    <h3 class="class-title">Geometry</h3>
+                    <hr style="width: 130px; margin-top: 2px;">
+                    <h5 class="class-content">Geometry is a concept that explores the properties and relationships of various shapes,
+                        including quadrilaterals, triangles, circles and more. In this subject, students learn about angle relationships,
+                        such as supplementary, complementary, or patterns like parallel or transversal. Additionally, students 
+                        gain an understanding of how to calculating volumes in 3D shapes (cubes, spheres, etc).
+                    </h5>
+                </div>
+                
+
+                <div class="class">
+                    <img src="../../Pictures/trigonometry.png">
+                    <h3 class="class-title">Trigonometry</h3>
+                    <hr style="width: 185px; margin-top: 2px;">
+                    <h5 class="class-content">Trigonometry is a slightly advanced subject that studies the relationship between
+                        angles and sides of triangles. By studying this subject at CLTutoring, you can gain help with your trigonometry
+                        homework, or dive into new concepts such as sine, cosine, and tangent that allows you to calculate unknown
+                        triangle sides/angles by using given information. Not only this, but students will gain an insight into the
+                        Unit Circle.
+                    </h5>
+                </div>
+            </div>
+
+            <div class="classes-row">
+                <div class="class">
+                    <img src="../../Pictures/graphs & transformations.jpg">
+                    <h3 class="class-title">Graphs & Transformations</h3>
+                    <hr style="width: 355px; margin-top: 2px;">
+                    <h5 class="class-content">In the subject of Graphs & Transformations, students gain understanding in functions
+                        and explore their graphical representation. CLTutoring focuses on understanding how different types of
+                        functions behave, their properties, and how they can be 'transformed'. Students also gain insights into
+                        key concepts such as domain, range, intercepts, end behaviors, and asymptotes on a graph.
+                    </h5>
+                </div>
+
+                <div class="class">
+                    <img src="../../Pictures/statistics & probability.png">
+                    <h3 class="class-title">Statistics & Probability</h3>
+                    <hr style="width: 350px; margin-top: 2px;">
+                    <h5 class="class-content">Statistics & Probability is a subject that revolves around data analysis, and the
+                        exploration of probabilities (chance of something happening). For example, understanding the likelihood
+                        of different events happening, like flipping a coin and getting heads multiple times in a row. By selecting
+                        this subject, students learn about probabilities, along with concepts in statistics, such as 
+                        calculating measures of central tendency, such as mean, median, and mode. 
+                    </h5>
+                </div>
+                
+                <div class="class">
+                    <img src="../../Pictures/pre-calculus.jpg">
+                    <h3 class="class-title">Math 1-3 & Pre-Calculus</h3>
+                    <hr style="width: 335px; margin-top: 2px;">
+                    <h5 class="class-content">This subject is great for students that need general help with their math in school.
+                        Our tutors will focus on assisting you with your math problems, making sure you understand the concepts 
+                        taught so you are prepared. Students may also take this subject in order to get ahead in their maths,
+                        especially in higher level maths that the other subjects may not include. This subject mostly
+                        covers important topics that are not mentioned in the other subjects, going up to Pre-Calculus.
+                    </h5>
+                </div>
+            </div>
+
+
+            <div class="classes-row_title">
+                <h2>CHEMISTRY</h2>
+            </div>
+            <div class="classes-row">
+                <div class="class">
+                    <img src="../../Pictures/chem foundations.png">
+                    <h3 class="class-title">Chemical Foundations</h3>
+                    <hr style="width: 295px; margin-top: 2px;">
+                    <h5 class="class-content">Chemical Foundations is an exciting subject that focuses on the basics of Chemistry
+                        This subject explores important ideas, such as the Periodic Table, structure of atoms, and the roles of
+                        electrons, neutrons, and protons. Not only this, but Chemical Foundations sets the stage of what
+                        Chemistry is about, so students that are interested in seeing what Chemistry is and what is taught
+                        should consider being tutored in this subject.
+                    </h5>
+                </div>
+
+                <div class="class">
+                    <img src="../../Pictures/chem bonding.png">
+                    <h3 class="class-title">Chemical Reactions & Bonding</h3>
+                    <hr style="width: 405px; margin-top: 2px;">
+                    <h5 class="class-content">This subject dives deeper into the Chemistry field, teaching another set of ideas
+                        such as the different types of chemical reactions, bonding, and intermolecular forces. Not only this,
+                        but this subject also teaches students properties of different elements of the periodic table, along
+                        with the states of matter. <b style="color:white;">*It is recommended that unless the student specifically needs help in this field,
+                        they learn Chemical Foundations first.*</b>
+                    </h5>
+                </div>
+                
+
+                <div class="class">
+                    <img src="../../Pictures/stoichiometry.png">
+                    <h3 class="class-title">Stoichiometry & Nomenclature</h3>
+                    <hr style="width: 400px; margin-top: 2px;">
+                    <h5 class="class-content">Stoichiometry & Nomenclature is a subject in Chemistry that connects to chemical
+                        reactions. Stoichiometry deals with balancing chemical reaction equations, while Nomenclature looks at the
+                        chemical names of different molecules. It also focuses on chemical formulas of different reactions. 
+                        <b style="color:white;">*It is recommended that unless the student specifically needs help in this field, they learn Chemical 
+                        Foundations and Chemical Reactions & Bonding first.*</b>
+                    </h5>
+                </div>
+            </div>
+            
+            <div style="text-align: center; width: 75%; margin-bottom: 60px; margin-top: 10px;">
+                <h3>*Know that these subjects are NOT set in stone, our tutors are VERY flexible and are willing to work
+                    with you no matter what you need help in (even if it is just advice). If you have any questions,
+                    please do not hesitate to contact your tutor or email <u>CLTutoring@gmail.com</u>.
+                </h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
