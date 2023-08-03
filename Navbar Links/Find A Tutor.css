@@ -1,0 +1,147 @@
+.underline:before {
+  background-color: #c8ceff;
+}
+
+.nav-dropdown-content a:hover {
+  display: block;
+  background-color: #dde2ee;
+}
+
+.navbar .nav-button a {
+  background-color: rgb(94, 95, 146);
+}
+
+.nav-button:hover a {
+  background-color: rgb(84, 85, 133);
+}
+
+.homepage-background {
+  opacity: 0.2;
+  z-index: -3;
+}
+
+.homepage-content {
+  color: rgb(199, 210, 247);
+}
+
+.homepage-heading {
+  color: rgb(225, 233, 255);
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: #c3cddd }
+  20% { border-color: transparent; }
+  40% { border-color: #c3cddd }
+  60% { border-color: transparent; }
+  80% { border-color: #c3cddd }
+}
+
+#charlotte {
+  color: rgb(233, 239, 255);
+}
+
+.view-our-team_button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  padding: 0px;
+  margin-top: 70px;
+  height: auto;
+  width: 100%;
+  position: absolute;
+
+}
+
+.view-our-team_button a {
+    background-color: rgb(76, 85, 104);
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 14px 25px;
+    margin: 0px 30px;
+    transition: 0.25s;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    opacity: 0;
+    visibility: hidden;
+    animation: appear 1s forwards;
+    animation-delay: 4s;
+  }
+
+@keyframes appear {
+  0% { opacity: 0; visibility: visible; }
+  100% { opacity: 1; visibility: visible; }
+}
+
+.view-our-team_button a:hover {
+    background-color: rgb(62, 69, 83);
+  }
+
+
+
+.find-a-tutor_bodypage {
+  position: relative;
+}
+
+.find-a-tutor_body1 {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.find-a-tutor_body1::before {
+    content: "";
+    background-image: url("a../Pictures/become-a-tutor-body1 background1.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .15;
+    z-index: -1;
+  }
+  
+  .find-a-tutor_body1-pic {
+    height: 25%;
+    z-index: -1;
+    position: absolute;
+    top: 29%;
+    left: 70%;
+    opacity: 0.65;
+    border-radius: 30px;
+    opacity: 0;
+    visibility: hidden;
+    animation: almappear 1s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes almappear {
+  0% { opacity: 0; visibility: visible; }
+  100% { opacity: .80; visibility: visible; }
+}
+
+.find-a-tutor_body1-hair {
+  color: white;
+  font-size: 30px;
+  padding: 50px 0px 35px;
+  opacity: 1;
+}
+
+
+.find-a-tutor_body1-content {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: lighter;
+  font-size: 18px;
+  opacity: 1;
+}
+
+
+.find-a-tutor_body1-form {
+  background-color: white;
+  width: 35%;
+  height: 900px;
+  opacity: 1;
+  border-radius: 10px;
+}
+

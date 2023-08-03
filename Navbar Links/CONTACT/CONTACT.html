@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Contact Us | CLTutoring</title>
+        <link rel="stylesheet" ~ href="../../Styling.css">
+        <link rel="stylesheet" ~ href="CONTACT.css">
+        <link rel="shortcut icon" href="../../Pictures/symbol invert.png">
+        <meta ~ name="description" content="We encourage you to contact us at CLTutoring if you have any questions,
+        concerns, or requests. CLTutoring offers customer service that will fix any problems and get back to you as
+         soon as possible.">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <p><a ~ href = "../../Tutoring Website.html"> <img class="nav-logo" ~ src ="../../Pictures/CLTutoring logo.png"></a></p>
+        <ul class = "nav-tools">
+            <!--
+                I just made it <ul> as a list just to make it easier to understand, it would also work as a <div>
+            -->
+            <li class="nav-item underline"><a ~ href="../../Tutoring Website.html">HOME</a></li>
+            <li class="nav-dropdown">
+                <!--
+                    Since this nav item is a dropdown, it takes css properties from .nav-item and 
+                    .nav-dropdown-item, essentially having two classes (this is to fix problem of
+                    regular nav-item having height of 100px, thus making dropdown-contents have a
+                    gap due to the height of the nav-item so i made nav-dropdown-item to change height
+                    to auto )
+                -->
+                <button class="nav-item nav-dropdown-item underline"><a ~ href="../../Tutoring Website.html#about">ABOUT</a></button>
+                <div class="nav-dropdown-content nav-dropdown-gap"></div>
+                <ul class="nav-dropdown-content">
+                    <li><a ~ href="../../Navbar Links/Find A Tutor.html">Find A Tutor</a></li>
+                    <li><a ~ href="../../Navbar Links/ABOUT/Subjects We Teach.html">Subjects We Teach</a></li>
+                    <li><a ~ href="../../Navbar Links/ABOUT/Our Instructors.html">Our Instructors</a></li>
+                    <!--
+                        <li><a ~ href="../../Navbar Links/ABOUT/Benefits For Students.html">Benefits For Students</a></li>
+                    -->
+                        <!--
+                            Students have the opportunity to learn from tutors at their convinience... etc 
+                        -->
+                </ul>
+            </li>
+            <li class="nav-dropdown">
+                <button class="nav-item nav-dropdown-item underline"><a ~ href="../../Navbar Links/CONTACT/CONTACT.html">CONTACT</a></button>
+                <div class="nav-dropdown-content nav-dropdown-gap"></div>
+                <ul class="nav-dropdown-content">
+                    <li><a ~ href="../../Navbar Links/Become A Tutor.html">Become A Tutor</a></li>
+                </ul>
+                    <!--
+                        Meet the Team!... in all caps font
+                    -->
+            </li>
+            <li class="nav-item underline"><a href="https://www.google.com/maps/place/Ballantyne,+Charlotte,+NC+28277
+                /@35.0406618,-80.8658671,14z/data=!4m6!3m5!1s0x88569d2895f6d23b:0x354bc674e1c11c3e!8m2!3d35
+                .0469079!4d-80.8454702!16s%2Fm%2F0282sw6?entry=ttu" target="_blank">LOCATION</a></li>
+            <li class="nav-item underline"><a ~ href="../../Navbar Links/FAQ/FAQ.html">FAQ</a></li>
+        </ul>
+        <div style="display: flex;">
+            <li class="nav-item nav-button" style="margin-right: 40px;"><a ~ href="../../Navbar Links/Become A Tutor.html">BECOME A TUTOR</a></li>
+            <li class="nav-item nav-button"><a ~ href="../../Navbar Links/Find A Tutor.html">FIND A TUTOR</a></li>
+        </div>
+        <!--<span class="nav-contact">
+            <img id="phone" src="Pictures/Phone.png">
+            <h2 id="number" style="color:rgb(203, 199, 212)"><u>919-919-9019</u></h2>
+        </span>
+        -->
+        <!-- Image picture on homepage
+        <img src="Pictures/tutoring pic.jpeg" 
+        style="margin: 1150px 0px 0px -20px; position: absolute; width: 350px; border-radius: 3353330px; 
+        opacity: 0.85">
+        --> 
+    </nav>
+
+    <div class="homepage">
+        <img class="homepage-background" ~ src="../../Pictures/contact background.jpg" style="opacity: .15">
+        <div class="homepage-content" ~ style="width: 325px;">
+            <div class="typewriter homepage-hair">
+                <h1 ~ class="homepage-hair" style="animation: typing .5s steps(40, end) forwards, blink-caret .5s step-end 0s; border-color: transparent;">
+                    HOW TO</h1>
+            </div>
+            <div class="typewriter homepage-heading">
+                <h2 ~ style="animation: typing 1s steps(40, end) forwards, blink-caret 1s step-end 0s; border-color: transparent;
+                animation-delay: 0.5s" class="homepage-heading">CONTACT</h2>
+            </div>
+        </div>
+        <hr class = "line-break" ~ style="width: 100px; margin-top:-10px">
+        <div class="typewriter homepage-text homepage-content">
+            <h3 ~ style="animation: typing 1.2s steps(40, end) forwards, blink-caret .75s step-end infinite; border-color: transparent;
+            animation-delay: 1.5s"
+            class="homepage-text">For any <b id="charlotte">questions, requests, or concerns, </b>
+            you can contact us through this page. </h3>
+        </div>
+    </div>
+<!-- 
+    Above, when writing multi-line typewriter text for "homepage-text" in other pages, you need to specify the second
+    div's width of the exact amount of pixels, or second line will have width of 0 at start, meaning it will insert a line
+    when typing, pushing everything below down.
+        *note, this works for only if both lines don't fit in one line, if it does, you will have to rework some things.
+-->
+
+    <hr id = "about" class = "line-break" style="margin-bottom: 175px;">
+
+    <script ~ src="../../Interactions.js"></script>
+
+
+    <div class="contact_bodypage">
+        <div class="contact_body1">
+            <div class="contact_body1-content">
+
+                <div class="segment">
+                    <h5>Email: CLTutoring0@gmail.com</h5>
+                    <h5 style="font-size: 18px; margin-left: 30px;">*For anything not urgent, please send us an email.</h5>
+                </div>
+                <div class="segment">
+                    <h5>Phone: (919)888-9077</h5>
+                    <h5 style="font-size: 18px; margin-left: 30px;">*If we don't pick up, feel free to leave a voicemail
+                    or send us an email!</h5>
+                </div>
+                <div class="segment">
+                    <div style="display: flex; align-items: center;">
+                        <h5 style="margin: 0px;">Instagram: CLTutoring</h5>
+                        <a style="z-index: 1; height: 30px; margin-left: 15px;" href="https://www.instagram.com/cltutoring/" target="_blank">
+                            <img style="height: 30px;" src="../../Pictures/instagram.png">
+                        </a>
+                    </div>
+                    <h5 style="font-size: 18px; margin-left: 30px;">*We often upload pictures of tutored students! Be sure to
+                    leave a follow and hit us with a DM if you have questions!</h5>
+                </div>
+                <div class="segment">
+                    <h5 style="margin-top: 150px;">*For any immediate assistance, please check out our FAQ
+                        page where you'll 
+                    </h5>
+                    <h5> 
+                         find answers to many frequently asked questions.*</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
