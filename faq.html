@@ -13,12 +13,12 @@
 
 <body>
     <nav class="navbar">
-        <p><a ~ href = "index"> <img class="nav-logo" ~ src ="Pictures/CLTutoring logo.png"></a></p>
+        <p><a ~ href = "./"> <img class="nav-logo" ~ src ="Pictures/CLTutoring logo.png"></a></p>
         <ul class = "nav-tools">
             <!--
                 I just made it <ul> as a list just to make it easier to understand, it would also work as a <div>
             -->
-            <li class="nav-item underline"><a ~ href="index">HOME</a></li>
+            <li class="nav-item underline"><a ~ href="./">HOME</a></li>
             <li class="nav-dropdown">
                 <!--
                     Since this nav item is a dropdown, it takes css properties from .nav-item and 
@@ -27,7 +27,7 @@
                     gap due to the height of the nav-item so i made nav-dropdown-item to change height
                     to auto )
                 -->
-                <button class="nav-item nav-dropdown-item underline"><a ~ href="index#about">ABOUT</a></button>
+                <button class="nav-item nav-dropdown-item underline"><a ~ href="./#about">ABOUT</a></button>
                 <div class="nav-dropdown-content nav-dropdown-gap"></div>
                 <ul class="nav-dropdown-content">
                     <li><a ~ href="find-a-tutor">Find A Tutor</a></li>
