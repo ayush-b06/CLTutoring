@@ -396,7 +396,7 @@ function applyStylesOnScroll() {
             review.style.opacity = '0.8';
         });
         review.addEventListener('mouseup', () => {
-            review.style.transform = 'translateY(0) scale(1.00)';
+            review.style.transform = 'translateY(0) scale(0.98)';
             review.style.opacity = '1';
         });
     })
