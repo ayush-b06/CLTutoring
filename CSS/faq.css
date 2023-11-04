@@ -1,0 +1,47 @@
+.navbar .nav-button a {
+    background-color: rgb(108, 93, 133);
+}
+  
+.nav-button:hover a {
+   background-color: rgb(98, 82, 116);
+}
+
+.homepage-heading {
+    color: #f2e7ff;
+}
+
+.faq_bodypage {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.faq_body1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-box {
+    width: 80%;
+}
+
+.faq-question {
+    font-size: 30px;
+}
+
+.faq-answer {
+    font-size: 16px;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 50px;
+    text-align: justify;
+    color: rgb(211, 196, 235);
+}
+
+.highlight {
+    color: rgb(232, 222, 241);
+    font-size: 16.4px;
+}
