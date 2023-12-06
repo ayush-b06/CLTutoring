@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const homepage = document.querySelector('.homepage');
 async function introAnim() {
     // Check if the animation has already been played in this session
-    if (true) {
+    if (!sessionStorage.getItem('introPlayed')) {
         setTimeout(() => {
             // Animation logic
             document.body.classList.add('no-scroll');
