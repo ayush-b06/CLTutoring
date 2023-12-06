@@ -529,6 +529,7 @@ body::before {
     font-family: Georgia;
     transition: 1.5s ease-in-out;
     transform: scale(1.10);
+    overflow-x: clip;
 }
 
 .homepage::before {
