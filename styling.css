@@ -858,7 +858,6 @@ body::before {
   display: flex;
   flex-direction: column;
   margin-left: 5%;
-  width: 95%;
 }
 
 .body0-sec1-indent:last-of-type {
