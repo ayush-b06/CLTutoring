@@ -1431,6 +1431,10 @@ body::before {
   .title-line {
     max-width: 40%;
   }
+  
+  .homepage-hair {
+    margin-top: 150px;
+  }
 }
 
 
