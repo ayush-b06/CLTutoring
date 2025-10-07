@@ -1,1 +1,1 @@
-Check us out at [cltutoring.vercel.app](cltutoring.vercel.app)!
+Check us out at [cltutoring.vercel.app](https://cltutoring.vercel.app)!
